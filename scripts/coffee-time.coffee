@@ -13,6 +13,6 @@
 module.exports = (robot) ->
 
   robot.respond /coffee time/i, (msg) ->
-        var users = ['Jared', 'Niki', 'Dan', 'Kenko']
-        var userToMakeCoffee = users[Math.floor(Math.random() * users.length)];
+        users = ['Jared', 'Niki', 'Dan', 'Kenko']
+        userToMakeCoffee = users[Math.floor(Math.random() * users.length)];
         msg.send "Hey @#{userToMakeCoffee}, you're up! Lucky you."
